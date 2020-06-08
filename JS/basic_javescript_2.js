@@ -29,8 +29,8 @@ document.write(blues);
 document.write(3+3);
 
 function My_First_Function () {     //Defining a function and naming it
-  var str="THIS TEXT IS GREEN!";    //Defining a function and giving it a string value
-  var result=str.fontcolor("green");//Using the fontcolot method on str value
+  var str="THIS TEXT IS PURPLE!";    //Defining a function and giving it a string value
+  var result=str.fontcolor("purple");//Using the fontcolot method on str value
   document.getElementById("Green_Text").innerHTML=result; //Putting the value of result into HTML element with "Green_Text" id
 }
 
