@@ -1,0 +1,13 @@
+*, *::before, *::after {
+  font-family: Gotham Rounded, Impact, sans-serif;
+  font-weight: normal;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+
