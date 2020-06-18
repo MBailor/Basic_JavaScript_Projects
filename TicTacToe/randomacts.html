@@ -1,0 +1,45 @@
+<html>
+<body>
+
+  <h2>JavaScript Function</h2>
+  
+    <p id="noarrow"></p>
+  
+  <h2> Javascript Arrow Function</h2>
+
+  <p id="arrow"></p>
+
+  <h2>Using the some() method to check an array </h2>
+
+  <p id="airay"></p>
+
+
+<script>
+
+  var hi;
+
+  hi = function() {
+    return "Aye Yo! What up?!?!"
+  }
+document.getElementById("noarrow").innerHTML = hi();
+
+  var hello;
+
+  hello = () => "Hey, what's up!?";
+
+  document.getElementById("arrow").innerHTML = hello();
+
+  var nums = [32, 23, 45, 56, 65, 67, 76, 78, 87, 89, 98, 90];
+  var someOver88 = nums.some(myFunction);
+
+  document.getElementById("airay").innerHTML = "someOver 88 is " + someOver88;
+
+  function myFunction(value, index, array) {
+    return value > 88;
+  }
+</script>
+
+</body>
+
+
+</html>
