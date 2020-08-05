@@ -78,7 +78,7 @@ function placeXOrO(squareNumber) {
 // drawWinLine function is called to draw line if condition is met.
 function checkWinConditions() {
   // X O, 1, 2 condition.
-  if        (arrayIncludes('OX', '1X', '2X')) { drawWinLine(50, 100, 558, 100); }
+  if        (arrayIncludes('0X', '1X', '2X')) { drawWinLine(50, 100, 558, 100); }
   // X 3, 4, 5 condition.
   else if   (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558, 304); }
   // X 6, 7, 8 condition.
@@ -154,7 +154,7 @@ audio.play();
 }
 
 
-// This dunction utilizes html canvas to draw win lines.
+// This function utilizes html canvas to draw win lines.
 function drawWinLine (coordX1, coordY1, coordX2, coordY2) {
     //This line accesses our html canvas element.
     const canvas = document.getElementById('win-lines');
@@ -198,7 +198,7 @@ function animateLineDrawing() {
     // This condition adds 10 to the previous end x point.
     if (x < x2) { x += 10; }
     // This condition adds 1- to the previous end y point.
-    if (y < y2) { x += 10; }
+    if (y < y2) { y += 10; }
     // This condition cancels our animation loop if reach the end points.
     if (x >= x2 && y >= y2) { cancelAnimationFrame(animationLoop); }
   }
@@ -242,6 +242,6 @@ function resetGame() {
     //This removes our elements backgroundImage.
     square.style.backgroundImage = '';
   }
-  // This resets put array so it is empty and we can start over. 
-  selectSquares = [];
+  // This resets our array so it is empty and we can start over. 
+  selectedSquares = [];
 }
